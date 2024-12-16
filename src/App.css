@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ddd;
+}
+
+.container {
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 1em auto;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  border-radius: inherit;
+  background-color: #8bc34a;
+  color: white;
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.qr-code {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.about-me h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+header {
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #4caf50;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+.work-experience h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.job {
+  margin-bottom: 30px;
+}
+
+.job h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.job p {
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    flex: 1 1 100%;
+  }
+
+  .sidebar {
+    text-align: left;
+  }
+}
+
+span.creds {
+  font-size: 0.7em;
+  color: gray;
+}
+
+ul.sidebar {
+  font-size: .9em;
+  line-height: 1em;
+}
+
+ul.sidebar li {
+  margin-bottom: 1em;
+  ;
+}

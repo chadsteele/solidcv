@@ -1,0 +1,29 @@
+#work-experience h2 {
+    color: green;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+span.dates {
+    font-size: 0.9em;
+    color: gray;
+}
+
+#work-experience h4 {
+    color: green;
+    text-align: right;
+}
+
+#work-experience ul {
+    margin-bottom: 1em;
+    font-size: .9em;
+    line-height: 1em;
+    margin-left: 3em;
+    ;
+}
+
+#work-experience .projects h4 {
+    text-align: left;
+    margin-left: -2em;
+    margin-top: 1em;
+}
