@@ -1,0 +1,105 @@
+.circle {
+    position: relative;
+    width: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    outline: 30px solid rgba(0, 0, 0, 0.35);
+    outline-offset: -12px;
+    margin: 0 auto;
+}
+
+.circle img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: inherit;
+}
+
+.circle::before,
+.circle::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    inset: -40px;
+    border-radius: inherit;
+    background-image: conic-gradient(#8bc34a, #888, #8bc34a, #ccc, #8bc34a);
+    animation: rotate 7s linear infinite;
+}
+
+.circle::after {
+    filter: blur(2rem);
+    opacity: 0.7;
+}
+
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.resume-wrapper {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.profile {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.profile .picture-resume-wrapper {
+    width: 40%;
+    display: block;
+    xfloat: left;
+}
+
+@media (max-width: 1200px) {
+    .profile .picture-resume-wrapper {
+        width: 100%;
+    }
+}
+
+.profile .picture-resume {
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 0px;
+    display: table;
+    position: relative;
+    vertical-align: middle;
+}
+
+.profile .picture-resume span {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    text-align: center;
+}
+
+.profile .picture-resume img {
+    border-radius: 50%;
+    width: 130px;
+}
+
+.profile svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile .st0,
+.profile .st1 {
+    fill: #66cc99;
+}

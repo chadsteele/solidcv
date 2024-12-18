@@ -1,3 +1,5 @@
+import src from "./assets/chad.steele.technical.director.senior.software.engineer.manager.r&d.jpeg"
+
 export default {
 	header: {
 		name: "Chad Steele",
@@ -20,6 +22,9 @@ export default {
 				link: "mailto:chad@chadsteele.com",
 			},
 		],
+	},
+	profile: {
+		pic: {src, alt: "chad steele, senior engineer, technical lead R&D"},
 	},
 	workExperience: {
 		title: "Experience",

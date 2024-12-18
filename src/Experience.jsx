@@ -1,5 +1,6 @@
 import { For } from 'solid-js';
 import './Experience.css';
+import Animated, { AnimatedSequence } from './Animated'
 
 export default ({ workExperience }) => {
     return (
@@ -7,11 +8,13 @@ export default ({ workExperience }) => {
             <h2>{workExperience.title}</h2>
             <h3>{workExperience.subtitle}</h3>
             <div>
-                <For each={workExperience.jobs} key={job => job.company + job.title}>
-                    {(job) => (
-                        <div>
+                <AnimatedSequence name="bounceInRight">
+                    <For each={workExperience.jobs} key={job => job.company + job.title}>
+                        {(job) => (<>
                             <h3><span class="dates">{job.dates}</span> • {job.company}</h3>
-                            <h4>{job.title}</h4>
+                            <Animated name="bounceInLeft" options="animate__delay-1s">
+                                <h4>{job.title}</h4>
+                            </Animated>
                             <ul>
                                 <For each={job.description} key={desc => typeof desc === 'object' ? desc.project : desc}>
                                     {(desc) => (<>
@@ -29,9 +32,10 @@ export default ({ workExperience }) => {
                                     )}
                                 </For>
                             </ul>
-                        </div>
-                    )}
-                </For>
+                        </>
+                        )}
+                    </For>
+                </AnimatedSequence>
             </div>
         </section>
     );

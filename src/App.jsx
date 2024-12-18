@@ -3,6 +3,8 @@ import './App.css';
 import data from './data.js'
 import { For } from 'solid-js';
 import WorkExperience from './Experience';
+import ProfilePic from './ProfilePic';
+import Animated, { AnimatedSequence } from './Animated';
 
 
 
@@ -16,7 +18,9 @@ function Sidebar (props) {
         <h3>{data.aboutMe.subtitle}</h3>
 
         <ul class="sidebar">
-          <For each={data.aboutMe.paragraphs}>{(p) => <li>{p}</li>}</For>
+          <AnimatedSequence >
+            <For each={data.aboutMe.paragraphs}>{(p) => <li>{p}</li>}</For>
+          </AnimatedSequence>
         </ul>
       </section>
 
@@ -30,6 +34,8 @@ function Header (props) {
 
     <h1>{data.header.name} <span class="creds">{data.header.creds}</span></h1>
     <h2>{data.header.tagline}</h2>
+
+    <ProfilePic />
 
   </div>
 }
