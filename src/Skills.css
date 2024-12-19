@@ -1,0 +1,27 @@
+#skills h2 {
+    color: green;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+#skills h4 {
+    color: green;
+    text-align: right;
+}
+
+
+
+#skills ul {
+    margin-left: 1em;
+    list-style-type: none;
+    font-size: .8rem;
+    line-height: .8rem;
+}
+
+#skills li {
+    display: inline;
+}
+
+#skills li::after {
+    content: ", ";
+}

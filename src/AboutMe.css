@@ -1,0 +1,10 @@
+#aboutme h2 {
+    color: green;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+#aboutme h4 {
+    color: green;
+    text-align: right;
+}

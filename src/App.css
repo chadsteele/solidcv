@@ -12,6 +12,15 @@ body {
   background-color: #ddd;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   border-radius: 1em;
   display: flex;
@@ -42,6 +51,7 @@ body {
 .about-me h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: green;
 }
 
 .about-me p {
@@ -81,29 +91,6 @@ header p {
 }
 
 
-.work-experience h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.job {
-  margin-bottom: 30px;
-}
-
-.job h3 {
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.job p {
-  margin-bottom: 10px;
-}
-
-.job ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -122,7 +109,7 @@ header p {
 
 span.creds {
   font-size: 0.7em;
-  color: gray;
+  color: green;
 }
 
 ul.sidebar {

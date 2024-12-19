@@ -1,6 +1,8 @@
 import src from "./assets/chad.steele.technical.director.senior.software.engineer.manager.r&d.jpeg"
+import qr from "./assets/qr.chadsteele.com.png"
 
 export default {
+	qr: qr,
 	header: {
 		name: "Chad Steele",
 		creds: "BSEE, MESE",
@@ -188,71 +190,53 @@ export default {
 			},
 		],
 	},
-	aboutMe: {
-		title: "About Me",
-		subtitle: "Simple Solutions to Complex Problems",
-		paragraphs: [
-			"As an accomplished Technical Director, Architect, and Lead Software Engineer, I bring over a decade of expertise and innovation to the art of software engineering",
-			"I am a proven leader, engineer, and innovator. I'm a passionate software developer. I have current skills in cutting-edge front and back-end technologies, object-oriented and event oriented programming languages, search engines, object and relational databases",
-			"I am well-versed in DevOps methodologies, CICD pipelines, and the latest containerization technologies",
-			"I am an organized manager, and am data and process driven. My teams create context before content, goals before objectives, and celebrate losses and lessons",
-			"I am especially effective with remote developers because I encourage ownership, thoughtful communication, and am objective oriented",
-		],
-	},
-	interests: {
-		title: "Interests",
-		items: [
-			{
-				description:
-					"Over 20 years of experience coaching and facilitating transformational leadership conversations with youth at risk, mentors, parents, and other stakeholders across various organizations",
-				organizations: [
-					"boldleaders.org",
-					"sosoutreach.org",
-					"playforpeace.org",
-					"cyar.org",
-				],
-			},
-			{
-				description:
-					"Volunteered with animal welfare organizations focused on apes, dolphins, and whales",
-				organizations: [
-					"janegoodall.org",
-					"ofi.org",
-					"gorillafund.org",
-					"thedolphininstitute.org",
-				],
-			},
-			{
-				description:
-					"Enjoys kayaking, scuba diving, kitesurfing, and playing the drums",
-				weaknesses: ["guitar playing"],
-			},
-		],
-	},
+	aboutMe: [
+		{
+			title: "About Me",
+			subtitle: "Simple Solutions to Complex Problems",
+			items: [
+				"As an accomplished Technical Director, Architect, and Lead Software Engineer, I bring over a decade of expertise and innovation to the art of software engineering",
+				"I am a proven leader, engineer, and innovator. I'm a passionate software developer. I have current skills in cutting-edge front and back-end technologies, object-oriented and event oriented programming languages, search engines, object and relational databases",
+				"I am well-versed in DevOps methodologies, CICD pipelines, and the latest containerization technologies",
+				"I am an organized manager, and am data and process driven. My teams create context before content, goals before objectives, and celebrate losses and lessons",
+				"I am especially effective with remote developers because I encourage ownership, thoughtful communication, and am objective oriented",
+			],
+		},
+		{
+			title: "Interests",
+			subtitle: "Volunteer, Coach, Mentor and Facilitator",
+			items: [
+				"Over 20 years of experience coaching and facilitating transformational leadership conversations with youth at risk, mentors, parents, and other stakeholders with the following non-profit organizations: boldleaders.org, sosoutreach.org, playforpeace.org, challengeday.org, coloradoyouthatrisk.org",
+				"Volunteered with animal welfare NGOs focused on apes, dolphins, and whales: janegoodall.org, orangutan.org, gorillafund.org, thedolphininstitute.org",
+				"Enjoys kayaking, scuba diving, kitesurfing, and playing the drums",
+			],
+		},
+	],
+
 	education: {
 		title: "Education",
 		items: [
 			{
 				institution: "UNIVERSITY OF COLORADO, BOULDER",
-				degree: "MESE Masters in Computer / Software Engineering",
-				specialization:
-					"Software Engineering, Artificial Intelligence, and Engineering Management",
+				degree: "MESE in Computer Engineering",
 				achievements: [
-					"Dean's List recognition",
+					"Specialized in UX, Artificial Intelligence and Engineering Management",
+					"Dean's List and Honor Role",
 					"Authored a thesis on innovative GUI design for medical devices",
 				],
 			},
 			{
 				institution: "UNIVERSITY OF WYOMING",
-				degree: "BSEE Electrical and Computer Engineering",
+				degree: "BSEE in Computer Engineering",
 				achievements: [
-					"President's Honor Roll distinction",
-					"Senior Software Engineer for the Dean's Office",
-					"Developed robotics for neural research on bats with the Department of Zoology",
-					"Recipient of the Easter Seal Award for innovative electrical assistance for individuals with disabilities",
-					"Inducted into the Order of the Engineer",
-					"Member of the Ski Team",
-					"Managed operations as Sigma Chi House Manager",
+					"President's Honor Roll",
+					"Employed as Senior Software Engineer for the Dean's Office of the College of Engineering",
+					"Employed by the Dept of Zoology and developed robotics for neural research on bats, rats and frogs",
+					"Won the International Easter Seal Award for an innovative device that empowerd severely disabled using thick film polymers",
+					"My work resulted in a whole new department and degree and several million dollar grants for the University",
+					"Proud member of the Order of the Engineer",
+					"Member of the UW Ski Team",
+					"Managed operations - Sigma Chi House Manager",
 				],
 			},
 		],

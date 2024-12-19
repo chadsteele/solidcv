@@ -4,7 +4,18 @@ import data from './data.js'
 import { For } from 'solid-js';
 import WorkExperience from './Experience';
 import ProfilePic from './ProfilePic';
-import Animated, { AnimatedSequence } from './Animated';
+import Education from './Education';
+import AboutMe from './AboutMe';
+import Skills from './Skills';
+
+
+export default function App () {
+  return <div class="container">
+    <Sidebar />
+    <MainContent />
+  </div>
+}
+
 
 
 
@@ -13,18 +24,11 @@ function Sidebar (props) {
     <aside class="sidebar">
       <Header />
 
-      <section class="about-me">
-        <h2>{data.aboutMe.title}</h2>
-        <h3>{data.aboutMe.subtitle}</h3>
+      <AboutMe data={data} />
+      <Education data={data} />
+      <Skills data={data} />
 
-        <ul class="sidebar">
-          <AnimatedSequence >
-            <For each={data.aboutMe.paragraphs}>{(p) => <li>{p}</li>}</For>
-          </AnimatedSequence>
-        </ul>
-      </section>
 
-      <img src="${data.qrCode}" alt="QR Code" class="qr-code" />
     </aside>
   </>
 }
@@ -44,19 +48,12 @@ function Header (props) {
 
 function MainContent (props) {
   return <div class="main-content">
-
     <WorkExperience workExperience={data.workExperience} />
-
+    <h1>Links</h1>
+    <img src={data.qr} alt="QR Code" class="qr-code" />
   </div>
 }
 
 
 
-function App () {
-  return <div class="container">
-    <Sidebar />
-    <MainContent />
-  </div>
-}
 
-export default App;

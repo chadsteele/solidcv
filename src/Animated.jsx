@@ -1,20 +1,10 @@
 
 import 'animate.css'
-import { For, children, onMount } from 'solid-js';
+import { For, children } from 'solid-js';
 
 export default function Animated ({ name, options, children, style }) {
-    name = `hiding  animate__${name?.replace("animate__", "") || 'bounceInLeft'}  ${options || ""}`
+    name = `animate__animated animate__delay1s animate__${name?.replace("animate__", "") || 'bounceInLeft'}  ${options || ""}`
     let ref
-
-    onMount(() => {
-        if (isElementInViewport(ref)) {
-            ref.classList.add('animate__animated');
-            ref.classList.remove('hiding');
-            ref.opacity = 1;
-        } else {
-            ref.opacity = 0;
-        }
-    })
 
     return <>
         <div class={name} style={style} ref={ref}>
@@ -23,16 +13,19 @@ export default function Animated ({ name, options, children, style }) {
     </>
 }
 
-export function AnimatedSequence (props, delay = 0.25) {
+export function AnimatedSequence (props) {
+    const delay = props.delay || 0.5;
     const kids = children(() => props.children).toArray();
     return <>
         <For each={kids}>
             {(child, i) => {
-                return <Animated name={props.name || "bounceInLeft"} style={{ 'animation-delay': `${i() * delay}s` }}>{child}</Animated>
+                return <Animated name={props.name || "bounceInLeft"} style={{ ...props.style, ...{ 'animation-delay': `${i() * delay}s` } }}>{child}</Animated>
             }}
         </For>
     </>
 }
+
+///////////////////
 
 function isElementInViewport (el) {
     const rect = el.getBoundingClientRect();
@@ -55,5 +48,5 @@ function handleScroll () {
 }
 
 // Initial check on load
-handleScroll();
-window.addEventListener('scroll', handleScroll);
+// handleScroll();
+// window.addEventListener('scroll', handleScroll);

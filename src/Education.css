@@ -1,0 +1,10 @@
+#education h2 {
+    color: green;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+#education h4 {
+    color: green;
+    text-align: right;
+}

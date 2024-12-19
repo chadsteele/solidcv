@@ -8,7 +8,7 @@ export default ({ workExperience }) => {
             <h2>{workExperience.title}</h2>
             <h3>{workExperience.subtitle}</h3>
             <div>
-                <AnimatedSequence name="bounceInRight">
+                <AnimatedSequence name="bounceInRight" delay={.25}>
                     <For each={workExperience.jobs} key={job => job.company + job.title}>
                         {(job) => (<>
                             <h3><span class="dates">{job.dates}</span> • {job.company}</h3>
