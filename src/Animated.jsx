@@ -6,8 +6,10 @@ export default function Animated ({ name, options, children, style }) {
     name = `animate__animated animate__delay1s animate__${name?.replace("animate__", "") || 'bounceInLeft'}  ${options || ""}`
     let ref
 
+    const enabled = document.location.search.includes('disable-animations') ? false : true
+
     return <>
-        <div class={name} style={style} ref={ref}>
+        <div class={enabled && name} style={enabled && style} ref={ref}>
             {children}
         </div>
     </>
