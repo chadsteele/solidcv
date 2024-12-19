@@ -3,29 +3,28 @@ import qr from "./assets/qr.chadsteele.com.png"
 
 export default {
 	qr: qr,
-	header: {
+
+	links: [
+		{
+			icon: "linkedin",
+			text: "/in/chadsteele",
+			link: "https://linkedin.com/in/chadsteele",
+		},
+		{
+			icon: "web",
+			text: "chadsteele.com",
+			link: "https://chadsteele.com",
+		},
+		{
+			icon: "email",
+			text: "chad@chadsteele.com",
+			link: "mailto:chad@chadsteele.com",
+		},
+	],
+
+	profile: {
 		name: "Chad Steele",
 		creds: "BSEE, MESE",
-
-		links: [
-			{
-				icon: "linkedin",
-				text: "/in/chadsteele",
-				link: "https://linkedin.com/in/chadsteele",
-			},
-			{
-				icon: "web",
-				text: "chadsteele.com",
-				link: "https://chadsteele.com",
-			},
-			{
-				icon: "email",
-				text: "chad@chadsteele.com",
-				link: "mailto:chad@chadsteele.com",
-			},
-		],
-	},
-	profile: {
 		pic: {src, alt: "chad steele, senior engineer, technical lead R&D"},
 	},
 	workExperience: {
@@ -208,7 +207,7 @@ export default {
 			items: [
 				"Over 20 years of experience coaching and facilitating transformational leadership conversations with youth at risk, mentors, parents, and other stakeholders with the following non-profit organizations: boldleaders.org, sosoutreach.org, playforpeace.org, challengeday.org, coloradoyouthatrisk.org",
 				"Volunteered with animal welfare NGOs focused on apes, dolphins, and whales: janegoodall.org, orangutan.org, gorillafund.org, thedolphininstitute.org",
-				"Enjoys kayaking, scuba diving, kitesurfing, and playing the drums",
+				"Enjoys travel, kayaking, scuba diving, kitesurfing, and playing the drums",
 			],
 		},
 	],
