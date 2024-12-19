@@ -17,10 +17,15 @@ import Animated, { AnimatedSequence } from './Animated';
 
 
 export default function App () {
-  return <div class="container">
-    <Sidebar />
-    <MainContent />
-  </div>
+  return <>
+    <header>
+      email: chad@chadsteele.com  /  visit: chadsteele.com
+    </header>
+    <div class="container">
+      <Sidebar />
+      <MainContent />
+    </div>
+  </>
 }
 
 
