@@ -12,6 +12,8 @@ import LinkedInIcon from "./assets/linkedin";
 import WebIcon from "@suid/icons-material/Language";
 import MailIcon from "@suid/icons-material/Email";
 import PdfIcon from "@suid/icons-material/PictureAsPdf";
+import CancelIcon from "@suid/icons-material/Cancel";
+import CheckIcon from "@suid/icons-material/Check";
 import { Button } from "@suid/material"
 import Animated, { AnimatedSequence } from './Animated';
 
@@ -48,7 +50,14 @@ function Sidebar (props) {
 function Header (props) {
   return <div class="header">
 
-
+    <div style={{ position: 'fixed', top: 0, right: 0 }}>
+      <Show when={!document.location.search.includes('disable-animations')}>
+        <Button color="success" href="./?disable-animations">disable animation <CancelIcon /></Button>
+      </Show>
+      <Show when={document.location.search.includes('disable-animations')}>
+        <Button color="success" href="./?enable-animations">enable animation <CheckIcon /></Button>
+      </Show>
+    </div>
     <h1>{data.profile.name} <span class="creds">{data.profile.creds}</span></h1>
     <h2>{data.profile.tagline}</h2>
     <Animated>

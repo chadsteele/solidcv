@@ -1,6 +1,6 @@
 
 import 'animate.css'
-import { For, children } from 'solid-js';
+import { For, children, Show } from 'solid-js';
 
 export default function Animated ({ name, options, children, style }) {
     name = `animate__animated animate__delay1s animate__${name?.replace("animate__", "") || 'bounceInLeft'}  ${options || ""}`
@@ -9,9 +9,11 @@ export default function Animated ({ name, options, children, style }) {
     const enabled = document.location.search.includes('disable-animations') ? false : true
 
     return <>
-        <div class={enabled && name} style={enabled && style} ref={ref}>
-            {children}
-        </div>
+        <Show when={enabled} fallback={<>{children}</>}>
+            <div class={name} style={style} ref={ref}>
+                {children}
+            </div>
+        </Show>
     </>
 }
 
