@@ -1,7 +1,7 @@
 
 import './App.css';
 import data from './data.js'
-import { For } from 'solid-js';
+import { createSignal } from 'solid-js';
 import WorkExperience from './Experience';
 import ProfilePic from './ProfilePic';
 import Education from './Education';
@@ -18,12 +18,32 @@ import { Button } from "@suid/material"
 import Animated, { AnimatedSequence } from './Animated';
 
 
+function EnableButton ({ style }) {
+  const [disabled, setDisabled] = createSignal(document.location.search.includes('disable-animations'))
+
+  const enabledBtn = <Button color="success" href="./?disable-animations" onClick={() => { setDisabled(true) }}>disable animation <CancelIcon /></Button>
+  const disabledBtn = <Button color="success" href="./?enable-animations" onClick={() => { setDisabled(false) }}>enable animation <CheckIcon /></Button>
+
+  return <div style={style}>
+    <Show when={disabled()} fallback={enabledBtn}>
+      {disabledBtn}
+    </Show>
+  </div>
+}
+
+
 export default function App () {
+
+
+
   return <>
     <header>
       email: chad@chadsteele.com  /  visit: chadsteele.com
     </header>
+
+    <EnableButton style={{ position: 'fixed', top: 0, right: 0 }} />
     <div class="container">
+
       <Sidebar />
       <MainContent />
     </div>
@@ -48,16 +68,8 @@ function Sidebar (props) {
 }
 
 function Header (props) {
-  return <div class="header">
 
-    <div style={{ position: 'fixed', top: 0, right: 0 }}>
-      <Show when={!document.location.search.includes('disable-animations')}>
-        <Button color="success" href="./?disable-animations">disable animation <CancelIcon /></Button>
-      </Show>
-      <Show when={document.location.search.includes('disable-animations')}>
-        <Button color="success" href="./?enable-animations">enable animation <CheckIcon /></Button>
-      </Show>
-    </div>
+  return <div class="header">
     <h1>{data.profile.name} <span class="creds">{data.profile.creds}</span></h1>
     <h2>{data.profile.tagline}</h2>
     <Animated>
