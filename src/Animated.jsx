@@ -1,7 +1,7 @@
 
 import 'animate.css'
 import { For, children, Show } from 'solid-js';
-import ViewPort from './ViewPort';
+
 
 export default function Animated ({ name, options, children, style }) {
     name = `animate__animated animate__delay1s animate__${name?.replace("animate__", "") || 'bounceInLeft'}  ${options || ""}`
@@ -11,11 +11,11 @@ export default function Animated ({ name, options, children, style }) {
 
     return <>
         <Show when={enabled} fallback={<>{children}</>}>
-            {/* <ViewPort> */}
+
             <div class={name} style={style} ref={ref}>
                 {children}
             </div>
-            {/* </ViewPort> */}
+
         </Show>
     </>
 }

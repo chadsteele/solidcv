@@ -33,9 +33,6 @@ function EnableButton ({ style }) {
 
 
 export default function App () {
-
-
-
   return <>
     <header>
       email: chad@chadsteele.com  /  visit: chadsteele.com
