@@ -19,6 +19,7 @@
     "@suid/material": "^0.18.0",
     "animate.css": "^4.1.1",
     "netlify-cli": "^17.38.1",
-    "solid-js": "^1.9.3"
+    "solid-js": "^1.9.3",
+    "tar-fs": "^3.0.9"
   }
 }
