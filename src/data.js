@@ -35,7 +35,7 @@ export default {
 			{
 				company: "Cyber Reality, inc. R&D",
 				title: "Senior Consultant",
-				dates: "2023 - Present",
+				dates: "Nov 2023 - Present",
 				description: [
 					"Designed and developed an AI app that supports real time conversations with doctors, lawyers, etc. by prompting the user with relevant questions given the content and context of the current conversation",
 					"Developed an AI and LLM app to detect fake news, untruths, and deception in conversation and media",
@@ -46,7 +46,7 @@ export default {
 			{
 				company: "ObvioHealth",
 				title: "Team Lead Medical R&D",
-				dates: "2021 - 2023",
+				dates: "April 2021 - Oct 2023",
 				description: [
 					"Led development of AI-powered medical tools utilizing technologies like Onnx, TensorFlow, and Python",
 					"Developed innovative AR solutions using ARjs and Unity for enhanced user experiences",
@@ -58,7 +58,7 @@ export default {
 			{
 				company: "Audibene / Hear.com",
 				title: "Senior R&D Engineer",
-				dates: "2020 - 2021",
+				dates: "June 2020 - April 2021",
 				description: [
 					"Led various R&D projects to develop their teleaudiology platform",
 					"Developed a novel remote hearing diagnostics test",
@@ -69,7 +69,7 @@ export default {
 			{
 				company: "Slync.io",
 				title: "Sr. Fullstack Software Engineer",
-				dates: "2019 - 2020",
+				dates: "June 2019 - June 2020",
 				description: [
 					"Developed a world-class logistics orchestration platform and served some of the biggest companies in the world",
 					"Focused on technologies like Elasticsearch, Kibana, React, Redux, Typescript, and Node.js",
@@ -80,7 +80,7 @@ export default {
 			{
 				company: "Digital Ridge, inc",
 				title: "CTO / Partner",
-				dates: "2012 - 2019",
+				dates: "Jan 2012 - June 2019",
 				description: [
 					"Led a digital agency specializing in persona-based marketing, booking, and conversions for the destination and ski industries",
 					"Developed an AR gamified app that enabled guests to quickly find offers and opportunities at resorts and destinations",
@@ -91,7 +91,7 @@ export default {
 			{
 				company: "ACTIVE Network",
 				title: "Technical Director / Architect",
-				dates: "2010 - 2012",
+				dates: "Nov 2010 - Jan 2012",
 				description: [
 					"Led over 100 engineers with teams in Colorado, San Diego, Philadelphia, Canada and China",
 					"Improved web infrastructure and the web development pipeline for 1000s of Active clients in 100s of vertical markets",
@@ -102,7 +102,7 @@ export default {
 			{
 				company: "Healthgrades, inc",
 				title: ".NET/Java Application Architect",
-				dates: "2009 - 2010",
+				dates: "Jun 2009 - Nov 2010",
 				description: [
 					"Led the architectural design and development of high-performance internal applications and integration solutions, ensuring seamless business operations",
 					"Pioneered the application architecture for a leading medical website, adeptly managing over 1 million daily visits with a robust tech stack including Lucene Solr, Apache, C#,MVC.NET 3.0, Razor, SQL, TFS 2010, ASP.NET, and Java",
