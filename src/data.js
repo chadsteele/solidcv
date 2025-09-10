@@ -40,7 +40,7 @@ export default {
 					"Designed and developed an AI app that supports real time conversations with doctors, lawyers, etc. by prompting the user with relevant questions given the content and context of the current conversation",
 					"Developed an AI and LLM app to detect fake news, untruths, and deception in conversation and media",
 					"Developed a crypto gambling game platform",
-					"Technologies used: Python, GCP, Azure, Node.js, SolidJS, React Native",
+					"Technologies used: Python, GCP, Azure, Node.js, SolidJS, React Native, Co-Pilot, Vibe, RAG, LangChain",
 				],
 			},
 			{
@@ -51,7 +51,7 @@ export default {
 					"Led development of AI-powered medical tools utilizing technologies like Onnx, TensorFlow, and Python",
 					"Developed innovative AR solutions using ARjs and Unity for enhanced user experiences",
 					"Proficient in full-stack development with Node.js, SolidJS, React Native, and other key technologies",
-					"Strong technical skills including React, Python, AI/ML, Cloud Computing, and more",
+					"Strong technical skills including React, Python, AI/ML, Cloud Computing, Vibe, RAG, LangChain and more",
 					"Reported to Brian Cohn, Director of R&D",
 				],
 			},
@@ -222,6 +222,7 @@ export default {
 					"Specialized in UX, Artificial Intelligence and Engineering Management",
 					"Dean's List and Honor Role",
 					"Authored a thesis on innovative GUI design for medical devices",
+					"3.6/4.0 GPA",
 				],
 			},
 			{
@@ -236,6 +237,7 @@ export default {
 					"Proud member of the Order of the Engineer",
 					"Member of the UW Ski Team",
 					"Managed operations - Sigma Chi House Manager",
+					"3.4/4.0 GPA",
 				],
 			},
 		],
@@ -269,7 +271,11 @@ export default {
 			{
 				category: "Engineering",
 				skills: [
-					"Software Engineering Expertise",
+					"Vibe Coding",
+					"RAG coding",
+					"Prompt Engineering",
+					"AI/ML Engineering",
+					"Software Engineering",
 					"Innovation",
 					"Passionate Developer",
 					"Cutting-Edge Technologies",
