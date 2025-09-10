@@ -16,7 +16,7 @@ function Links ({ text }) {
                     fallback={`${word} `}
                 >
                     <a
-                        href={`https://${links(word)[0]}?referral=chadsteele.com`}
+                        href={`http://${links(word)[0]}?referral=chadsteele.com`}
                         target={word}
                     >
                         {word}

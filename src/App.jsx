@@ -71,7 +71,7 @@ function Header (props) {
     <h2>{data.profile.tagline}</h2>
     <Animated>
       <Button color="success" href="mailto:chad@chadsteele.com?subject=chadsteele.com"><MailIcon />chad@chadsteele.com</Button>
-      <Button color="success" href="https://pdf.chadsteele.com"><PdfIcon />download</Button>
+      <Button color="success" href="http://pdf.chadsteele.com"><PdfIcon />download</Button>
     </Animated>
 
     <ProfilePic />
@@ -96,12 +96,12 @@ function MainContent (props) {
         <Button variant="outlined" color="success" aria-label="email" href="mailto:chad@chadsteele.com?subject=chadsteele.com" target="_blank">
           <MailIcon /> &nbsp; chad@chadsteele.com
         </Button>
-        <Button variant="outlined" color="success" aria-label="pdf" href="https://pdf.chadsteele.com" target="_blank">
+        <Button variant="outlined" color="success" aria-label="pdf" href="http://pdf.chadsteele.com" target="_blank">
           <PdfIcon /> &nbsp; download
         </Button>
       </div>
       <div>
-        <Button variant="outlined" color="success" aria-label="web" href="https://chadsteele.com" target="_blank">
+        <Button variant="outlined" color="success" aria-label="web" href="http://chadsteele.com" target="_blank">
           <WebIcon /> &nbsp; ChadSteele.com
         </Button>
 
@@ -109,7 +109,7 @@ function MainContent (props) {
           <GitIcon /> &nbsp; this cv
         </Button>
 
-        <Button variant="outlined" color="success" aria-label="recommendations" href="https://hello.chadsteele.com" target="_blank">
+        <Button variant="outlined" color="success" aria-label="recommendations" href="http://hello.chadsteele.com" target="_blank">
           <PdfIcon />&nbsp; recommendations
         </Button>
       </div>

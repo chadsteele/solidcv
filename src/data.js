@@ -13,7 +13,7 @@ export default {
 		{
 			icon: "web",
 			text: "chadsteele.com",
-			link: "https://chadsteele.com",
+			link: "http://chadsteele.com",
 		},
 		{
 			icon: "email",
